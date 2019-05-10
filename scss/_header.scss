@@ -1,0 +1,41 @@
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  &__box{
+    padding: 5% 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 33.333vh;
+    &__logo{
+      width: 100%;
+      max-width: 30px;
+    }
+    &__text{
+      text-transform: uppercase;
+      font-size: 2.0rem;
+      &.white{
+        color: $white;
+      }
+    }
+    h1{
+      text-transform: uppercase;
+      color: $white;
+      font-size: 3.8rem;
+      font-family: 'Libre Baskerville', serif;
+      grid-column: 4 / span 3;
+      text-align: center;
+      span{
+        font-size: 1.5rem;
+      }
+    }
+    .icon_mouse{
+      width: 100%;
+      max-width: 15px;
+    }
+  }
+}
+
